@@ -19,6 +19,13 @@
   <uses-permission android:name="android.permission.RECORD_AUDIO"/>
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
   <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+  
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+  <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+
+  <uses-sdk xmlns:tools="com.truecaller.android.sdk"/>
+
   <!-- END OPTIONAL PERMISSIONS -->
   <application
     android:name=".MainApplication"
@@ -30,6 +37,13 @@
   >
     <meta-data android:name="expo.modules.updates.EXPO_UPDATE_URL" android:value="YOUR-APP-URL-HERE"/>
     <meta-data android:name="expo.modules.updates.EXPO_SDK_VERSION" android:value="YOUR-APP-SDK-VERSION-HERE"/>
+    
+    
+    <activity android:name=".TruecallerAuthModule" />
+    <meta-data android:name="com.truecaller.android.sdk.PartnerKey" android:value="@string/partnerKey"/>
+
+    
+    
     <activity
       android:name=".MainActivity"
       android:label="@string/app_name"
@@ -44,5 +58,6 @@
       </intent-filter>
     </activity>
     <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+    
   </application>
 </manifest>
