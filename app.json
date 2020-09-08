@@ -1,0 +1,12 @@
+{
+  "name": "true-project",
+  "displayName": "true-project",
+  "expo": {
+    "name": "true-project",
+    "slug": "true-project",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
